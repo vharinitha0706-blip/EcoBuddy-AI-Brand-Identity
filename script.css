@@ -6,4 +6,4 @@ function showMessage() {
 function selectProduct(product) {
   document.getElementById("productMessage").textContent =
     "You selected: " + product;
-}
+}.
