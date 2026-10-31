@@ -2,100 +2,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoBuddy Brand Identity</title>
-  <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBuddy Brand Identity</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
+<header>
     <h1>🌿 EcoBuddy</h1>
     <p>Small Choices. Greener Future.</p>
-  </header>
+</header>
 
-  <nav>
+<nav>
     <a href="#about">About</a>
     <a href="#products">Products</a>
     <a href="#identity">Brand Identity</a>
-  </nav>
+</nav>
 
-  <main>
+<section class="hero">
+    <div class="leaf">🌱</div>
+    <h2>Welcome to EcoBuddy!</h2>
+    <p>Your friendly companion for reusable everyday products.</p>
+    <button onclick="showMessage()">Explore Our Brand</button>
+    <p id="message"></p>
+</section>
 
-    <section class="hero">
-      <div class="leaf">🌱</div>
-      <h2>Welcome to EcoBuddy!</h2>
-      <p>Your friendly companion for reusable everyday products.</p>
-      <button onclick="showMessage()">Explore Our Brand</button>
-      <p id="message" class="notice"></p>
-    </section>
-
-    <section id="about">
-      <h2>About EcoBuddy</h2>
-      <p>
+<section id="about">
+    <h2>About EcoBuddy</h2>
+    <p>
         EcoBuddy is a fictional eco-friendly startup
         that promotes reusable products such as water
         bottles, cloth bags and bamboo toothbrushes.
-      </p>
-    </section>
+    </p>
+</section>
 
-    <section id="products">
-      <h2>Our Products</h2>
+<section id="products">
+    <h2>Our Products</h2>
 
-      <div class="products">
+    <div class="products">
 
-        <article class="card">
-          <div class="emoji">💧</div>
-          <h3>Reusable Bottle</h3>
-          <p>A convenient bottle for everyday use.</p>
-          <button onclick="selectProduct('Reusable Bottle')">
-            Select Product
-          </button>
-        </article>
+        <div class="card">
+            <div class="emoji">💧</div>
+            <h3>Reusable Bottle</h3>
+            <p>A convenient bottle for everyday use.</p>
+            <button onclick="selectProduct('Reusable Bottle')">
+                Select Product
+            </button>
+        </div>
 
-        <article class="card">
-          <div class="emoji">🛍️</div>
-          <h3>Cloth Bag</h3>
-          <p>A reusable bag for shopping and travel.</p>
-          <button onclick="selectProduct('Cloth Bag')">
-            Select Product
-          </button>
-        </article>
+        <div class="card">
+            <div class="emoji">🛍️</div>
+            <h3>Cloth Bag</h3>
+            <p>A reusable bag for shopping and travel.</p>
+            <button onclick="selectProduct('Cloth Bag')">
+                Select Product
+            </button>
+        </div>
 
-        <article class="card">
-          <div class="emoji">🪥</div>
-          <h3>Bamboo Toothbrush</h3>
-          <p>An eco-friendly everyday product.</p>
-          <button onclick="selectProduct('Bamboo Toothbrush')">
-            Select Product
-          </button>
-        </article>
+        <div class="card">
+            <div class="emoji">🪥</div>
+            <h3>Bamboo Toothbrush</h3>
+            <p>An eco-friendly everyday product.</p>
+            <button onclick="selectProduct('Bamboo Toothbrush')">
+                Select Product
+            </button>
+        </div>
 
-      </div>
+    </div>
 
-      <p id="productMessage" class="notice"></p>
-    </section>
+    <p id="productMessage"></p>
+</section>
 
-    <section id="identity">
-      <h2>Our Brand Identity</h2>
+<section id="identity">
+    <h2>Our Brand Identity</h2>
 
-      <div class="card identity-card">
-        <p><strong>Brand Name:</strong> EcoBuddy</p>
-        <p><strong>Primary Colour:</strong> Forest Green</p>
-        <p><strong>Brand Voice:</strong> Friendly and Positive</p>
-        <p><strong>Tagline:</strong> Small Choices. Greener Future.</p>
-      </div>
-    </section>
+    <div class="card">
+        <p><b>Brand Name:</b> EcoBuddy</p>
+        <p><b>Primary Colour:</b> Forest Green</p>
+        <p><b>Brand Voice:</b> Friendly and Positive</p>
+        <p><b>Tagline:</b> Small Choices. Greener Future.</p>
+    </div>
+</section>
 
-  </main>
-
-  <footer>
+<footer>
     <p>EcoBuddy © 2026</p>
     <p>Reuse Today. Build Better Habits.</p>
-  </footer>
+</footer>
 
-  <script src="Script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
