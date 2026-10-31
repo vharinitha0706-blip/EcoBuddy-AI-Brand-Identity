@@ -5,113 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EcoBuddy Brand Identity</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f4e9;
-      color: #26332d;
-    }
-
-    header {
-      background: #176b4d;
-      color: white;
-      text-align: center;
-      padding: 28px 15px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-
-    header p {
-      margin-bottom: 0;
-    }
-
-    nav {
-      background: #67a96b;
-      padding: 12px;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 8px;
-      font-weight: bold;
-    }
-
-    main {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 25px 10px;
-    }
-
-    .hero .leaf {
-      font-size: 65px;
-    }
-
-    h2 {
-      color: #176b4d;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 15px;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      text-align: center;
-      box-shadow: 0 3px 10px #00000012;
-    }
-
-    .emoji {
-      font-size: 45px;
-    }
-
-    button {
-      background: #176b4d;
-      color: white;
-      border: none;
-      padding: 11px 18px;
-      border-radius: 6px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-
-    button:hover {
-      background: #104b35;
-    }
-
-    #message {
-      font-weight: bold;
-      color: #176b4d;
-      margin-top: 15px;
-    }
-
-    footer {
-      background: #176b4d;
-      color: white;
-      text-align: center;
-      padding: 18px;
-      margin-top: 25px;
-    }
-  </style>
+  <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
@@ -128,20 +22,21 @@
   </nav>
 
   <main>
+
     <section class="hero">
       <div class="leaf">🌱</div>
       <h2>Welcome to EcoBuddy!</h2>
       <p>Your friendly companion for reusable everyday products.</p>
       <button onclick="showMessage()">Explore Our Brand</button>
-      <p id="message"></p>
+      <p id="message" class="notice"></p>
     </section>
 
     <section id="about">
       <h2>About EcoBuddy</h2>
       <p>
-        EcoBuddy is a fictional eco-friendly startup that promotes
-        reusable products such as water bottles, cloth bags and
-        bamboo toothbrushes.
+        EcoBuddy is a fictional eco-friendly startup
+        that promotes reusable products such as water
+        bottles, cloth bags and bamboo toothbrushes.
       </p>
     </section>
 
@@ -149,46 +44,50 @@
       <h2>Our Products</h2>
 
       <div class="products">
-        <div class="card">
+
+        <article class="card">
           <div class="emoji">💧</div>
           <h3>Reusable Bottle</h3>
           <p>A convenient bottle for everyday use.</p>
           <button onclick="selectProduct('Reusable Bottle')">
             Select Product
           </button>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <div class="emoji">🛍️</div>
           <h3>Cloth Bag</h3>
           <p>A reusable bag for shopping and travel.</p>
           <button onclick="selectProduct('Cloth Bag')">
             Select Product
           </button>
-        </div>
+        </article>
 
-        <div class="card">
+        <article class="card">
           <div class="emoji">🪥</div>
           <h3>Bamboo Toothbrush</h3>
-          <p>An everyday alternative to explore.</p>
+          <p>An eco-friendly everyday product.</p>
           <button onclick="selectProduct('Bamboo Toothbrush')">
             Select Product
           </button>
-        </div>
+        </article>
+
       </div>
 
-      <p id="productMessage"></p>
+      <p id="productMessage" class="notice"></p>
     </section>
 
     <section id="identity">
       <h2>Our Brand Identity</h2>
-      <div class="card">
-        <p><b>Brand Name:</b> EcoBuddy</p>
-        <p><b>Primary Colour:</b> Forest Green</p>
-        <p><b>Brand Voice:</b> Friendly, positive and practical</p>
-        <p><b>Tagline:</b> Small Choices. Greener Future.</p>
+
+      <div class="card identity-card">
+        <p><strong>Brand Name:</strong> EcoBuddy</p>
+        <p><strong>Primary Colour:</strong> Forest Green</p>
+        <p><strong>Brand Voice:</strong> Friendly and Positive</p>
+        <p><strong>Tagline:</strong> Small Choices. Greener Future.</p>
       </div>
     </section>
+
   </main>
 
   <footer>
@@ -196,17 +95,7 @@
     <p>Reuse Today. Build Better Habits.</p>
   </footer>
 
-  <script>
-    function showMessage() {
-      document.getElementById("message").textContent =
-        "Welcome! Let's make reusable habits part of everyday life.";
-    }
-
-    function selectProduct(product) {
-      document.getElementById("productMessage").textContent =
-        "You selected: " + product;
-    }
-  </script>
+  <script src="Script.js"></script>
 
 </body>
 </html>
