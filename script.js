@@ -1,0 +1,10 @@
+
+function showMessage() {
+  document.getElementById("message").textContent =
+    "Welcome! Let's make reusable habits part of everyday life.";
+}
+
+function selectProduct(product) {
+  document.getElementById("productMessage").textContent =
+    "You selected: " + product;
+}
