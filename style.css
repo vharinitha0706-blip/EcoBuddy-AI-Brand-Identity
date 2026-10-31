@@ -1,127 +1,151 @@
 
+
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f4e9;
-  color: #26332d;
-  line-height: 1.6;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f4e9;
+    color: #26332d;
+    line-height: 1.6;
 }
 
 header {
-  background: #176b4d;
-  color: white;
-  text-align: center;
-  padding: 28px 15px;
+    background: #176b4d;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 36px;
+    font-size: 42px;
+    margin: 0;
 }
 
 header p {
-  font-size: 18px;
+    font-size: 20px;
 }
 
 nav {
-  background: #67a96b;
-  padding: 14px;
-  text-align: center;
+    background: #67a96b;
+    padding: 15px;
+    text-align: center;
 }
 
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-main {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+nav a:hover {
+    text-decoration: underline;
 }
 
 section {
-  margin: 35px 0;
+    max-width: 900px;
+    margin: auto;
+    padding: 25px 20px;
 }
 
 h2 {
-  color: #176b4d;
-  font-size: 28px;
+    color: #176b4d;
+    font-size: 30px;
 }
 
 .hero {
-  text-align: center;
-  padding: 35px 10px;
+    text-align: center;
+    padding: 65px 20px;
 }
 
-.hero .leaf {
-  font-size: 65px;
+.leaf {
+    font-size: 90px;
+}
+
+.hero h2 {
+    font-size: 34px;
+}
+
+.hero p {
+    font-size: 20px;
 }
 
 .products {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 18px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 22px;
 }
 
 .card {
-  background: white;
-  padding: 22px;
-  border-radius: 16px;
-  text-align: center;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    background: white;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin: 15px 0;
 }
 
 .emoji {
-  font-size: 48px;
+    font-size: 65px;
+}
+
+.card h3 {
+    font-size: 25px;
+}
+
+.card p {
+    font-size: 18px;
 }
 
 button {
-  background: #176b4d;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 16px;
+    background: #176b4d;
+    color: white;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
 }
 
 button:hover {
-  background: #104b35;
+    background: #104b35;
 }
 
-.notice {
-  color: #176b4d;
-  font-weight: bold;
-}
-
-.identity-card {
-  text-align: left;
+#message,
+#productMessage {
+    color: #176b4d;
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px;
 }
 
 footer {
-  background: #176b4d;
-  color: white;
-  text-align: center;
-  padding: 18px;
+    background: #176b4d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
 }
 
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 30px;
-  }
+@media(max-width: 480px) {
+    header h1 {
+        font-size: 34px;
+    }
 
-  main {
-    padding: 15px;
-  }
+    nav a {
+        margin: 5px;
+        font-size: 15px;
+    }
+
+    section {
+        padding: 20px 15px;
+    }
 }
